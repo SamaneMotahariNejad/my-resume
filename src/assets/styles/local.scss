@@ -1,0 +1,200 @@
+html {
+  scrollbar-color: $third-color transparent;
+  scrollbar-width: thin;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding: 0 !important;
+}
+
+body,
+* {
+  // font-family: "Open Sans" !important;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.fa,
+.fal,
+.far,
+.fas {
+  font-family: "Font Awesome Pro";
+  font-weight: 900;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+a {
+  &:hover {
+    text-decoration: unset !important;
+  }
+}
+
+$i: 0;
+
+@while $i <=1000 {
+  .m--#{$i} {
+    margin: #{$i}px !important;
+  }
+
+  .mt--#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .mb--#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  .p--#{$i} {
+    padding: #{$i}px !important;
+  }
+
+  .pt--#{$i} {
+    padding-top: #{$i}px !important;
+  }
+
+  .pb--#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+
+  .wMin--#{$i} {
+    min-width: #{$i}px !important;
+  }
+
+  .wMax--#{$i} {
+    max-width: #{$i}px !important;
+  }
+
+  .w--#{$i} {
+    width: #{$i}px !important;
+  }
+
+  .h--#{$i} {
+    height: #{$i}px !important;
+  }
+
+  .hMin--#{$i} {
+    min-height: #{$i}px !important;
+  }
+
+  .hMax--#{$i} {
+    max-height: #{$i}px !important;
+  }
+
+  .hCalc-vh--#{$i} {
+    min-height: calc(100vh - #{$i}px);
+  }
+
+  .hCalc-percent--#{$i} {
+    min-height: calc(100% - #{$i}px);
+  }
+
+  .fw-#{$i} {
+    font-weight: #{$i} !important;
+  }
+
+  $i: $i + 1;
+}
+
+$i: 0;
+
+@while $i <=700 {
+  .mr--#{$i} {
+    margin-right: #{$i}px !important;
+  }
+
+  .ml--#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  .pr--#{$i} {
+    padding-right: #{$i}px !important;
+  }
+
+  .pl--#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  $i: $i + 1;
+}
+
+$i: 0;
+
+@while $i <=700 {
+  .round-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+
+  $i: $i + 1;
+}
+
+$i: 0;
+
+@while $i <=700 {
+  .fs-#{$i} {
+    font-size: #{$i}px !important;
+  }
+
+  .width-#{$i} {
+    width: #{$i + "%"} !important;
+  }
+
+  .width-MinMax-#{$i} {
+    width: #{$i + "%"} !important;
+    max-width: #{$i + "%"} !important;
+    min-width: #{$i + "%"} !important;
+  }
+
+  .height-#{$i} {
+    height: #{$i + "%"} !important;
+  }
+
+  $i: $i + 1;
+}
+
+.bg--danger {
+  background: #f55145;
+}
+
+.bg--success {
+  background: #92c755;
+}
+
+.bg-danger-color {
+  background-color: #ffd9d9 !important;
+  border: 1px solid #ff4646 !important;
+  color: #ff4646 !important;
+}
+
+.text-danger-color {
+  color: #ff4646;
+}
+
+.text-success-color {
+  color: #8bc34a;
+}
+
+.bg-success-color {
+  background: #92c755;
+  background-color: #92c755 !important;
+}
+
+.text-first-color {
+  color: $first-color !important;
+}
+
+.bg-first-color {
+  background-color: $first-color !important;
+}
